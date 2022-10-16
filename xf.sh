@@ -55,7 +55,10 @@ if [[ $yesno =~ "Y"|"y" ]]; then
             },
             "streamSettings": {
                 "network": "ws",
-                "security": "none"
+                "security": "chacha20-poly1305",
+                "wsSettings": {
+                    "path": "/0afb869f-30cd-4063-98a8-89d78ee4efbf"
+                }
             }
         },
         {
