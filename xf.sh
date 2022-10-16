@@ -30,7 +30,7 @@ read -rp "是否安装脚本？ [Y/N]：" yesno
 if [[ $yesno =~ "Y"|"y" ]]; then
     rm -f railgun kazari.json
     yellow "开始安装..."
-    wget -N https://github.com/xf857/gm/blob/main/railgun?raw=true
+    wget -N https://raw.githubusercontent.com/xf857/gm/main/railgun
     chmod +x railgun
     read -rp "请设置UUID（如无设置则使用脚本默认的）：" uuid
     if [[ -z $uuid ]]; then
